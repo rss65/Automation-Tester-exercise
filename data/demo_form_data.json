@@ -1,0 +1,22 @@
+[
+    {
+        "firstname": "Zak",
+        "lastname": "Baba",
+        "phone": "01234567890",
+        "email": "zak.baba@s-d-s.co.uk",
+        "company": "Test company",
+        "enquiry": "Landval",
+        "message": "This is a test message, please ignore.",
+        "expect_success": true
+    },
+    {
+        "firstname": "",
+        "lastname": "Baba",
+        "phone": "invalid_phone",
+        "email": "not-an-email",
+        "company": "Test company",
+        "enquiry": "Landval",
+        "message": "This is a test message, please ignore.",
+        "expect_success": false
+    }
+]
