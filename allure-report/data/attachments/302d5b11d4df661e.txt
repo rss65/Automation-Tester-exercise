@@ -1,0 +1,2 @@
+🟢 Customers found: 402
+⚠️ Could not rename video C:\Users\Admin\Downloads\sds_automation_bdd\test-videos\34949803132f66cc8d427327f499e033.webm → C:\Users\Admin\Downloads\sds_automation_bdd\test-videos\test_view_customer_count_20250602_022008.webm: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Admin\\Downloads\\sds_automation_bdd\\test-videos\\34949803132f66cc8d427327f499e033.webm'

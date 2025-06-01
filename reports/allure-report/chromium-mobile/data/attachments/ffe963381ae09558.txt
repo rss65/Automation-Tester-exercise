@@ -1,0 +1,2 @@
+🟢 Users found: 7291
+⚠️ Could not save video C:\Users\Admin\Downloads\sds_automation_bdd\test-videos\f5e5f9be69c24f3971e66065bfea197e.webm → C:\Users\Admin\Downloads\sds_automation_bdd\test-videos\test_view_user_count_20250602_022402.webm: Page is not yet closed. Close the page prior to calling save_as

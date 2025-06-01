@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"C:\Users\Admin\Downloads\sds_automation_bdd\features\sds_site.feature: View user count","4510","test_view_user_count","features.steps","Mon Jun 02 02:41:35 EEST 2025","passed","Mon Jun 02 02:41:40 EEST 2025","","test_sds_steps","",""
+"","5277","test_demo_form_payload[payload2]","tests","Mon Jun 02 02:41:55 EEST 2025","passed","Mon Jun 02 02:42:00 EEST 2025","","test_request_demo_param","",""
+"C:\Users\Admin\Downloads\sds_automation_bdd\features\sds_site.feature: View customer count","6889","test_view_customer_count","features.steps","Mon Jun 02 02:41:28 EEST 2025","passed","Mon Jun 02 02:41:35 EEST 2025","","test_sds_steps","",""
+"","5123","test_demo_form_payload[payload0]","tests","Mon Jun 02 02:41:45 EEST 2025","passed","Mon Jun 02 02:41:50 EEST 2025","","test_request_demo_param","",""
+"","4210","test_demo_form_payload[payload1]","tests","Mon Jun 02 02:41:50 EEST 2025","passed","Mon Jun 02 02:41:54 EEST 2025","","test_request_demo_param","",""
+"C:\Users\Admin\Downloads\sds_automation_bdd\features\sds_site.feature: Request a Landval demo","4968","test_request_a_landval_demo","features.steps","Mon Jun 02 02:41:40 EEST 2025","passed","Mon Jun 02 02:41:45 EEST 2025","","test_sds_steps","",""

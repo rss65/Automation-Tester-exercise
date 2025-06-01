@@ -1,0 +1,2 @@
+🟢 Customers found: 402
+⚠️ Could not save video C:\Users\Admin\Downloads\sds_automation_bdd\test-videos\6df90ec10c45e644ea1b8ff45a009966.webm → C:\Users\Admin\Downloads\sds_automation_bdd\test-videos\test_view_customer_count_20250602_022356.webm: Page is not yet closed. Close the page prior to calling save_as

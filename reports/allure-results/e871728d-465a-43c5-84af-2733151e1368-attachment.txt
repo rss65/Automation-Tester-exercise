@@ -1,0 +1,2 @@
+🟢 Customers found: 402
+⚠️ Could not move/attach video C:\Users\Admin\Downloads\sds_automation_bdd\test-videos\4ad28633853d9025b54a64110a3bb8bf.webm → C:\Users\Admin\Downloads\sds_automation_bdd\test-videos\test_view_customer_count_20250601_202431.webm: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Admin\\Downloads\\sds_automation_bdd\\test-videos\\4ad28633853d9025b54a64110a3bb8bf.webm'
