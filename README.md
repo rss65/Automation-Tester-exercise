@@ -1,95 +1,26 @@
-SDS Website Functional Test Automation
-Approach, Implementation, and Enhancements
-Overview
-This project automates core functional test scenarios for the SDS website, ensuring that essential business-critical features (displaying customer/user counts, and the Landval demo request flow) work as intended. In addition to meeting the baseline requirements, extra engineering practices were introduced to improve maintainability, reliability, and extensibility.
+# SDS Automation QA Assessment
 
-1. Requirements Coverage
-The following high-level behaviors were automated, as specified:
+## Overview
 
-Viewing Customer Count: Test navigates to the homepage and verifies the displayed number of customers.
+This repository contains an end-to-end functional test suite for [Shelton Development Services (SDS)](https://s-d-s.co.uk/), built as part of an interview assessment.  
+It demonstrates robust automation principles, modern Python tooling, and a focus on maintainability, scalability, and clear reporting.
 
-Viewing User Count: Test navigates to the homepage and verifies the displayed number of users.
+---
 
-Requesting a Landval Demo: Test completes the demo request form with valid data and ensures successful submission.
+## 📋 What’s Covered
 
-2. Page Object Model & Code Organization
-Enhancement:
-To promote maintainability and scalability, the codebase was structured using the Page Object Model (POM) design pattern.
+- **Customer/User Stats**: Automated validation of SDS’s live customer and user counts.
+- **Demo Request Form**: Positive and negative scenarios for the "Book a demo" form on the Landval product page, including data-driven negative tests (e.g., invalid phone, missing fields) and API response validation.
+- **Cross-Browser and Mobile**: Tests can run on Chromium, Firefox, WebKit, and mobile emulation.
+- **Video and Reporting**: Each test run records video and generates detailed Allure + HTML reports.
+- **Parallel Execution**: All tests can be executed in parallel for speed.
 
-HomeStatsPage: Encapsulates all logic related to reading customer and user stats on the homepage.
+---
 
-LandvalDemoPage: Encapsulates logic for interacting with the Landval demo form, including form filling and validation.
+## 🚀 Quick Start
 
-Benefits:
+### 1. **Install Dependencies**
 
-Test logic is separated from UI structure, making changes easy if selectors or layout update.
-
-New features or flows can be added by extending or creating new page objects.
-
-3. Centralized Selector Management
-Enhancement:
-All UI selectors were centralized in dedicated files, ensuring that any change in the website’s markup only requires a single update.
-
-Benefits:
-
-Rapid, error-free updates to test locators.
-
-Consistent usage of selectors across the suite.
-
-4. Robust Data-Driven Testing
-Enhancement:
-Tests were designed to support both valid and invalid data sets (including negative and boundary scenarios). This helps validate both positive workflows and form validation logic.
-
-Benefits:
-
-Increased coverage and early bug detection.
-
-Clear documentation of business rules and expected edge-case behavior.
-
-5. Cross-Browser and Mobile Emulation Support
-Enhancement:
-Tests are parameterized to run on multiple browsers (Chromium, Firefox, etc.) and on mobile device viewports.
-
-Benefits:
-
-Ensures a consistent user experience across platforms.
-
-Easily detects issues specific to certain browsers or devices.
-
-6. Video Recording and Rich Reporting
-Enhancement:
-Each test run captures a video, named with the test case and execution timestamp, providing traceability and context for each result.
-Additionally, Allure HTML reports are generated, embedding artifacts and offering interactive, developer-friendly output.
-
-Benefits:
-
-Easy debugging and audit trail for test runs.
-
-Professional, readable reports for stakeholders and developers.
-
-7. BDD (Behavior-Driven Development)
-Enhancement:
-Scenarios were described in Gherkin syntax, making them easy to read for technical and non-technical stakeholders.
-Each scenario maps to test step definitions for maximum clarity and traceability.
-
-Benefits:
-
-Encourages collaboration between QA, developers, and business.
-
-Documentation and test automation are always in sync.
-
-8. Validation and Error Handling
-Enhancement:
-Special care was taken to:
-
-Detect not only the presence of the form and UI elements, but also their stability (waiting for stats to stabilize before reading).
-
-Check both field-specific and roll-up form validation messages for error cases.
-
-Ensure there are no false positives due to timing or race conditions.
-
-Benefits:
-
-Reduces test flakiness.
-
-Surfaces subtle UX or functional regressions.
+```sh
+pip install -r requirements.txt
+playwright install

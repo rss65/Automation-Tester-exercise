@@ -63,26 +63,21 @@ def context(request, browser, pw):
 def page(request, context):
     page = context.new_page()
     yield page
-
-    # --- TEARDOWN: close the page first, then save the video ---
     try:
-        # 1) Close the page (so its video file is finalized)
         page.close()
     except Exception:
-        # If it’s already closed, ignore
         pass
 
     video = page.video
     if video:
         raw_path = video.path()
         if raw_path and os.path.exists(raw_path):
-            test_name = request.node.name  # e.g. "test_view_user_count"
+            test_name = request.node.name
             ts = datetime.now().strftime("%Y%m%d_%H%M%S")
             new_filename = f"{test_name}_{ts}.webm"
             dst = os.path.join(os.getcwd(), "test-videos", new_filename)
 
             try:
-                # Save the video via Playwright (this waits for it to be fully written)
                 video.save_as(dst)
                 print(f"📽️ Video for this test: {dst}")
             except Exception as e:

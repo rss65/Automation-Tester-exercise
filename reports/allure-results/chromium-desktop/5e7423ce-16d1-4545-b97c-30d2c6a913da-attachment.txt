@@ -1,0 +1,2 @@
+🟢 Users found: 7291
+📽️ Video for this test: C:\Users\Admin\Downloads\sds_automation_bdd\test-videos\test_view_user_count_20250602_151701.webm

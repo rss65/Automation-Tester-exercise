@@ -21,10 +21,7 @@ class HomeStatsPage:
         timeout: float = 10.0,
         poll_interval: float = 0.5
     ) -> str:
-        """
-        Wait until the “.pwr-stat__number” for a given title
-        (e.g. “CUSTOMERS” or “USERS”) stops changing. Return the final string.
-        """
+
         start_time = time.time()
         prev_number = None
         stable_count = 0

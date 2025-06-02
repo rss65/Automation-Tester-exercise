@@ -1,0 +1,2 @@
+🟢 Customers found: 402
+📽️ Video for this test: C:\Users\Admin\Downloads\sds_automation_bdd\test-videos\test_view_customer_count_20250602_151657.webm
