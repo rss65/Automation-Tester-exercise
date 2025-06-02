@@ -24,3 +24,54 @@ It demonstrates robust automation principles, modern Python tooling, and a focus
 ```sh
 pip install -r requirements.txt
 playwright install
+
+🧑‍💻 Running the Test Suite
+2. Test Execution Examples
+All commands below assume you are in the project root.
+
+Desktop Browsers
+Browser	Command Example
+Chromium	pytest --browser=chromium --alluredir=reports/allure-results/chromium-desktop
+Firefox	pytest --browser=firefox --alluredir=reports/allure-results/firefox-desktop
+WebKit	pytest --browser=webkit --alluredir=reports/allure-results/webkit-desktop
+
+Mobile Emulation (Chromium Only)
+To run with mobile emulation (e.g., iPhone 12):
+
+sh
+Copy
+Edit
+pytest --browser=chromium --mobile --alluredir=reports/allure-results/chromium-mobile
+Parallel Execution
+To speed things up, you can run tests in parallel (e.g., 4 workers):
+
+sh
+Copy
+Edit
+pytest -n 4 --browser=chromium --alluredir=reports/allure-results/chromium-desktop
+Note: The -n 4 flag requires pytest-xdist (included in requirements).
+
+3. Generating Allure Reports
+After your test run completes, generate and view a beautiful Allure report:
+
+sh
+Copy
+Edit
+allure generate reports/allure-results/chromium-desktop -o reports/allure-report/chromium-desktop --clean
+allure open reports/allure-report/chromium-desktop
+Replace chromium-desktop with the desired output folder (e.g., firefox-desktop or chromium-mobile).
+
+4. Additional Tips
+Test Videos:
+Each test automatically records a video, saved in /test-videos/ and named after the test for easy debugging.
+
+HTML Reports:
+Optionally, add --html=reports/report.html --self-contained-html for a quick standalone report.
+
+Environment Requirements:
+
+Python 3.8+
+
+Playwright browsers installed (playwright install)
+
+Allure CLI installed (see Allure installation instructions)
