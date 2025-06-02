@@ -31,7 +31,7 @@ def browser_name(pytestconfig):
 
 @pytest.fixture(scope="session")
 def browser(pw, browser_name):
-    return getattr(pw, browser_name).launch(headless=False)
+    return getattr(pw, browser_name).launch(headless=True)
 
 @pytest.fixture(scope="function")
 def context(request, browser, pw):
