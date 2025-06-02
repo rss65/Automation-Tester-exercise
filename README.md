@@ -14,6 +14,7 @@ It demonstrates robust automation principles, modern Python tooling, and a focus
 - **Cross-Browser and Mobile**: Tests can run on Chromium, Firefox, WebKit, and mobile emulation.
 - **Video and Reporting**: Each test run records video and generates detailed Allure + HTML reports.
 - **Parallel Execution**: All tests can be executed in parallel for speed.
+- **CI/CD Integration**: The tests are run automatically on all browsers on github push requests using github actions.
 
 ---
 
